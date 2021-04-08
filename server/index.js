@@ -9,8 +9,7 @@ const db = mysql.createPool({
     database :''
 })
 
-app.listen(3001,() =>{
-    console.log('running on port 3001');
+con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
 });
-
-
